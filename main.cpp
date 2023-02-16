@@ -15,11 +15,17 @@ template <typename T> class Node{
 template <typename T> class LinkedList{
     public:
         Node<T> *Head = NULL;
-        void Insert_0(T data)
+        void Insert(T data)
         {
             Node<T> *New_node = new Node<T>(data,NULL);
             New_node->next = this->Head;
             this->Head = New_node;
+        }
+
+        void Insert(T data, int index)
+        {
+            if(index == 0)
+                this->Insert(data);
         }
 
         void display()
