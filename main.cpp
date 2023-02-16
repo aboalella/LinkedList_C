@@ -43,10 +43,10 @@ int main()
 {
     LinkedList<int> ls;
 
-    ls.Insert_0(10);
-    ls.Insert_0(11);
-    ls.Insert_0(12);
-    ls.Insert_0(13);
+    ls.Insert(10);
+    ls.Insert(11);
+    ls.Insert(12);
+    ls.Insert(13);
 
     ls.display();
     return 0;
